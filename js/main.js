@@ -74,9 +74,9 @@ $(function(){
         }, 380);
     })
 
-    $('.main').on('click', function () {
-        showMenu(false);
-    })
+    // $('.main').on('click', function () {
+    //     showMenu(false);
+    // })
 
     // $('.image-slider').slick({
     //     infinite: true,
@@ -96,6 +96,8 @@ $(function(){
     //         }
     //     ]
     // });
+
+
     window.headerParallaxInit = function() {
         var container = document.querySelector(".hero-background");
         container.style.backgroundPosition = "center " + (-100 + (($('.main')[0].scrollTop) * 0.7)) + "px";
@@ -116,7 +118,7 @@ $(function(){
         center: false
     }); 
 
-    $(window).on('load', function () {
-        headerParallaxInit();
-    })
+    // $(window).on('load', function () {
+    //     headerParallaxInit();
+    // })
 })
