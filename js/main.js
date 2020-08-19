@@ -74,28 +74,37 @@ $(function(){
         }, 380);
     })
 
-    // $('.main').on('click', function () {
-    //     showMenu(false);
-    // })
+    $('.main').on('click', function () {
+        showMenu(false);
+    })
 
-    // $('.image-slider').slick({
-    //     infinite: true,
-    //     slidesToShow: 3,
-    //     slidesToScroll: 1,
-    //     dots: true,
-    //     arrows: true,
-    //     nextArrow: '<i class="fa fa-chevron-right"></i>',
-    //     prevArrow: '<i class="fa fa-chevron-left"></i>',      
-    //     responsive: [
-    //         {
-    //             breakpoint: 1024,
-    //             settings: {
-    //                 slidesToShow: 2,
-    //                 arrows: true
-    //             }
-    //         }
-    //     ]
-    // });
+    $('.slick-slider').slick({
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        dots: true,
+        arrows: true,
+        swipeToSlide: true,
+        autoplay: true,
+        // nextArrow: '<i class="fa fa-chevron-right"></i>',
+        // prevArrow: '<i class="fa fa-chevron-left"></i>',      
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 2,
+                    arrows: true
+                }
+            },
+            {
+                breakpoint: 450,
+                settings: {
+                    slidesToShow: 1,
+                    arrows: true
+                }
+            }
+        ]
+    });
 
 
     window.headerParallaxInit = function() {

@@ -46,6 +46,10 @@ header {
 
             &.show {
                 left: 0;
+
+                .inner-wrapper { 
+                    padding-left: 80px;
+                }
             }
 
             .menu {
@@ -57,7 +61,6 @@ header {
                     min-width: 200px;
                     margin: 0 auto;
                     margin-top: 20%;
-                    padding-left: 80px;
 
                     .menu-links {
                         display: flex;

@@ -113,49 +113,40 @@ body {
 
 .asdfg .components-transition {
   position: relative;
-  height: 40px;
+  height: 30px;
   width: 100%;
+  -webkit-transform: rotate(-1deg);
+          transform: rotate(-1deg);
 }
 
-.asdfg .components-transition .inner {
-  width: 100%;
-  height: 20px;
-  position: relative;
-  -webkit-transform: rotate(-1.5deg);
-          transform: rotate(-1.5deg);
-  top: 5px;
-  left: -10px;
-}
-
-.asdfg .components-transition .inner .top {
-  background-color: #000000;
-  width: 50%;
-  height: 50%;
-  position: absolute;
-  left: -15px;
+.asdfg .components-transition::before {
+  width: 60%;
+  -webkit-transform: skew(-50deg);
+          transform: skew(-50deg);
   top: 1px;
-  -webkit-transform: skew(-50deg, 0deg);
-          transform: skew(-50deg, 0deg);
+  left: -10%;
+  height: 15px;
 }
 
-.asdfg .components-transition .inner .bottom {
+.asdfg .components-transition::after {
+  width: 100%;
+  bottom: .3px;
+  height: 15px;
+}
+
+.asdfg .components-transition::before, .asdfg .components-transition::after, .asdfg .components-transition .line {
+  content: '';
+  position: absolute;
   background-color: #000000;
-  width: 100%;
-  float: right;
-  height: 55%;
-  position: absolute;
-  right: 0;
-  bottom: 0px;
 }
 
-.asdfg .components-transition .overlay-bg {
-  position: absolute;
-  background-color: black;
+.asdfg .components-transition .line {
   width: 100%;
-  height: 103%;
-  bottom: 0;
-  -webkit-clip-path: polygon(100% 100%, 0% 100%, 100% 0);
-          clip-path: polygon(100% 100%, 0% 100%, 100% 0);
+  right: 0;
+  -webkit-transform: rotate(1deg);
+          transform: rotate(1deg);
+  height: 55%;
+  bottom: -27%;
 }
 
 header {
@@ -218,6 +209,10 @@ header nav.expanded-menu.show {
   left: 0;
 }
 
+header nav.expanded-menu.show .inner-wrapper {
+  padding-left: 80px;
+}
+
 header nav.expanded-menu .menu {
   padding-top: 75%;
   display: -webkit-box;
@@ -233,7 +228,6 @@ header nav.expanded-menu .menu .inner-wrapper {
   min-width: 200px;
   margin: 0 auto;
   margin-top: 20%;
-  padding-left: 80px;
 }
 
 header nav.expanded-menu .menu .inner-wrapper .menu-links {
@@ -787,7 +781,6 @@ header nav.expanded-menu .menu .inner-wrapper .menu-links a.active span {
   font-size: 14px;
   letter-spacing: 1px;
   font-weight: bold;
-  color: magenta;
 }
 
 .card-text-right .card-body .card-description .card-tag .tag-line, .card-text-left .card-body .card-description .card-tag .tag-line {
@@ -798,12 +791,10 @@ header nav.expanded-menu .menu .inner-wrapper .menu-links a.active span {
 }
 
 .card-text-right .card-body .card-description .card-heading, .card-text-left .card-body .card-description .card-heading {
-  color: #000066;
   font-size: 36px;
 }
 
 .card-text-right .card-body .card-description .card-text, .card-text-left .card-body .card-description .card-text {
-  color: #004700;
   margin-top: 20px;
   line-height: 26px;
 }
@@ -844,20 +835,77 @@ header nav.expanded-menu .menu .inner-wrapper .menu-links a.active span {
   background-color: red;
 }
 
-.image-slider {
-  background-color: green;
+.card-slider {
+  padding: 30px 0;
 }
 
-.image-slider img {
+.card-slider .slide .slide-card {
+  padding: 20px;
   display: block;
   margin: 0 auto;
-  width: 80%;
+}
+
+.card-slider .slide .slide-card .image-container img {
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+  height: 310px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media (max-width: 992px) {
+  .card-slider .slide .slide-card .image-container img {
+    height: 260px;
+    max-height: unset;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .card-slider .slide .slide-card .image-container img {
+    height: 200px;
+    max-height: 150px;
+  }
+}
+
+.card-slider .slide .slide-card .card-body {
+  padding-top: 25px;
+}
+
+.card-slider .slide .slide-card .card-body .heading {
+  font-size: 36px;
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+
+.card-slider .slide .slide-card .card-body .subheading {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.card-slider .slide .slide-card .card-body .description {
+  font-size: 16px;
 }
 
 @media (max-width: 767px) {
-  .image-slider img {
-    padding: 0 10px;
+  .card-slider .slide .slide-card .card-body {
+    padding-top: 15px;
   }
+  .card-slider .slide .slide-card .card-body .heading {
+    font-size: 22px;
+    padding-bottom: 5px;
+  }
+  .card-slider .slide .slide-card .card-body .subheading {
+    font-size: 16px;
+  }
+  .card-slider .slide .slide-card .card-body .description {
+    font-size: 16px;
+  }
+}
+
+.card-slider .slick-dots {
+  bottom: 0;
 }
 
 .video-component {

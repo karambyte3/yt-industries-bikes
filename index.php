@@ -63,23 +63,6 @@
     </div>
 </div>
 
-<!-- <div class="container">
-    <div class="image-slider">
-        <div class="image-slide">
-            <img src="https://picsum.photos/300/300?random=1" alt="asdfg">
-        </div>
-        <div class="image-slide">
-            <img src="https://picsum.photos/300/300?random=1" alt="asdfg">
-        </div>
-        <div class="image-slide">
-            <img src="https://picsum.photos/300/300?random=1" alt="asdfg">
-        </div>
-        <div class="image-slide">
-            <img src="https://picsum.photos/300/300?random=1" alt="asdfg">
-        </div>
-    </div>
-</div> -->
-
 <div class="home-section-3">
     <div class="container">
         <h1 class="section-heading">Downhill feels amazing with this beast</h1>
@@ -97,17 +80,72 @@
     </div>
 </div>
 
+<div class="container">
+    <div class="slick-slider card-slider">
+        <div class="slide">
+            <div class="slide-card">
+                <div class="image-container">
+                    <img src="media/video-overlay-test.jpg" alt="asdfg">
+                </div>
+                <div class="card-body">
+                    <h1 class="heading">All-carbon frame</h1>
+                    <h3 class="subheading">Stiff, strong and bulletproof ability</h3>
+                    <p class="description">
+                        Our carbon frames are voluminous, stiff and light. By placing carbon fibers of different resistance in the layup we can construct imposing tube cross-sections with variable wall thickness while keeping the weight low and optimizing the frame stiffness. Despite using a 150 mm rear axle, the rear triangle features a narrow profile to avoid coming in contact with your shoes.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="slide">
+            <div class="slide-card">
+                <div class="image-container">
+                    <img src="media/vertical-test-image.jpg" alt="asdfg">
+                </div>
+                <div class="card-body">
+                    <h1 class="heading">All-carbon frame</h1>
+                    <h3 class="subheading">Stiff, strong and bulletproof ability</h3>
+                    <p class="description">
+                        Our carbon frames are voluminous, stiff and light. By placing carbon fibers of different resistance in the layup we can construct imposing tube cross-sections with variable wall thickness while keeping the weight low and optimizing the frame stiffness. Despite using a 150 mm rear axle, the rear triangle features a narrow profile to avoid coming in contact with your shoes.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="slide">
+            <div class="slide-card">
+                <div class="image-container">
+                    <img src="media/video-overlay-test.jpg" alt="asdfg">
+                </div>
+                <div class="card-body">
+                    <h1 class="heading">All-carbon frame</h1>
+                    <h3 class="subheading">Stiff, strong and bulletproof ability</h3>
+                    <p class="description">
+                        Our carbon frames are voluminous, stiff and light. By placing carbon fibers of different resistance in the layup we can construct imposing tube cross-sections with variable wall thickness while keeping the weight low and optimizing the frame stiffness. Despite using a 150 mm rear axle, the rear triangle features a narrow profile to avoid coming in contact with your shoes.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="slide">
+            <div class="slide-card">
+                <div class="image-container">
+                    <img src="media/video-overlay-test.jpg" alt="asdfg">
+                </div>
+                <div class="card-body">
+                    <h1 class="heading">All-carbon frame</h1>
+                    <h3 class="subheading">Stiff, strong and bulletproof ability</h3>
+                    <p class="description">
+                        Our carbon frames are voluminous, stiff and light. By placing carbon fibers of different resistance in the layup we can construct imposing tube cross-sections with variable wall thickness while keeping the weight low and optimizing the frame stiffness. Despite using a 150 mm rear axle, the rear triangle features a narrow profile to avoid coming in contact with your shoes.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 
 <!-- <div class="container-fluid asdfg">
     <div class="components-transition">
-        <div class="inner">
-            <div class="top"></div>
-            <div class="bottom"></div>
-        </div>
-        <div class="overlay-bg"></div>
+        <div class="line"></div>
     </div>
-
-
 </div> -->
 
 
