@@ -60,6 +60,10 @@ $(function(){
         }
     });
 
+    $('.main').on('click', function () {
+        showMenu(false);
+    })
+
     $('.play-video').on('click', function (e) {
         e.preventDefault();
         var $videoOverlay = $(this).closest('.video-overlay');
@@ -74,10 +78,6 @@ $(function(){
         }, 380);
     })
 
-    $('.main').on('click', function () {
-        showMenu(false);
-    })
-
     $('.slick-slider').slick({
         infinite: true,
         slidesToShow: 3,
@@ -85,9 +85,9 @@ $(function(){
         dots: true,
         arrows: true,
         swipeToSlide: true,
-        autoplay: true,
-        // nextArrow: '<i class="fa fa-chevron-right"></i>',
-        // prevArrow: '<i class="fa fa-chevron-left"></i>',      
+        // autoplay: true,
+        prevArrow: '<i class="fa fa-chevron-left prev-arrow"></i>',      
+        nextArrow: '<i class="fa fa-chevron-right next-arrow"></i>',
         responsive: [
             {
                 breakpoint: 768,
@@ -125,7 +125,12 @@ $(function(){
     var rellax = new Rellax('.rellax', {
         wrapper:'.main',
         center: false
-    }); 
+    });
+
+
+    var inspectableImages = document.querySelectorAll('.inspectable-img');
+        Intense(inspectableImages);
+
 
     // $(window).on('load', function () {
     //     headerParallaxInit();

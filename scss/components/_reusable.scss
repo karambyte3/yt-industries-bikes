@@ -42,3 +42,71 @@
         opacity: 0;
     }
 }
+
+.gallery-section-component {
+
+    // TODO: delete if gallery section component is completed
+    background-color: black;
+    padding: 100px 0;
+    margin-top: 100px;
+    padding-bottom: 200px;
+    h1 {
+        color: white;
+    }
+    // TODO: END 
+
+    .images {
+        display: -ms-flexbox; /* IE10 */
+        display: flex;
+        -ms-flex-wrap: wrap; /* IE10 */
+        flex-wrap: wrap;
+        justify-content: center;
+
+        /* Create four equal columns that sits next to each other */
+        .col {
+            -ms-flex: 25%; /* IE10 */
+            flex: 25%;
+            max-width: 25%;
+            overflow: hidden;
+            background-color: $black;
+
+            .image {
+                overflow: hidden;
+
+                img {
+                vertical-align: middle;
+                width: 100%;
+                max-height: 220px;
+                object-fit: cover;
+                cursor: url(../media/main/icons/plus-cursor.png) 25 25, auto;
+                transition: .3s;
+                opacity: 1;
+
+                    &:hover {
+                        transform: scale(110%, 110%);
+                        opacity: .6;
+                    }
+                }
+            }
+
+            /* Responsive layout - Tablet devices */
+            @media screen and (max-width: 800px) {
+                -ms-flex: 50%;
+                flex: 50%;
+                max-width: 25%;
+            }
+    
+            /* Responsive layout - Mobile devices */
+            @media screen and (max-width: 600px) {
+                -ms-flex: 100%;
+                flex: 100%;
+                max-width: 100%;
+
+                .image img {
+                    max-height: unset;
+                    height: 400px;
+                }
+            }
+        }
+    }
+}

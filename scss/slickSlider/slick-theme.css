@@ -104,6 +104,15 @@
   margin-right: 30px;
 }
 
+.slick-slider i.slick-arrow {
+  position: absolute;
+  top: 50%;
+}
+
+.slick-slider i.slick-arrow.next-arrow {
+  right: 0;
+}
+
 .slick-dots {
   position: absolute;
   bottom: -25px;

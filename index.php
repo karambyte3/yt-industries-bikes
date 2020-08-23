@@ -141,6 +141,58 @@
     </div>
 </div>
 
+<div class="fullscreen-video-component">
+    <div class="video">
+        <div class="video-overlay home-video-overview autoplay-video" style="background-image: url(media/video-overlay-test.jpg)">
+            <a href="#" class="play-video">
+                <span class="play-icon"></span>
+            </a>
+        </div>
+        <iframe width="100%" height="500px" src="https://www.youtube.com/embed/pULJG0g3tHU?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope" allowfullscreen></iframe>
+    </div>
+</div>
+
+
+
+<div class="gallery-section-component">
+<h1 class="section-heading">Check out my awesome gallery</h1>
+    <div class="images">
+        <div class="col">
+            <div class="image">
+                <img src="media/vertical-test-image.jpg" class="inspectable-img">
+            </div>
+            <div class="image">
+                <img src="media/horizontal-test-image.jpg" class="inspectable-img">
+            </div>
+        </div>
+        <div class="col">
+            <div class="image">
+                <img src="media/horizontal-test-image.jpg" class="inspectable-img">
+            </div>
+            <div class="image">
+                <img src="media/vertical-test-image.jpg" class="inspectable-img">
+            </div>
+        </div>
+        <div class="col">
+            <div class="image">
+                <img src="media/vertical-test-image.jpg" class="inspectable-img">
+            </div>
+            <div class="image">
+                <img src="media/horizontal-test-image.jpg" class="inspectable-img">
+            </div>
+        </div>
+        <div class="col">
+            <div class="image">
+                <img src="media/horizontal-test-image.jpg" class="inspectable-img">
+            </div>
+            <div class="image">
+                <img src="media/vertical-test-image.jpg" class="inspectable-img">
+            </div>
+        </div>
+    </div>
+</div>
+
+
 
 <!-- <div class="container-fluid asdfg">
     <div class="components-transition">
