@@ -1,7 +1,7 @@
 <?php include VIEWS_PATH . DS . 'views' . DS . 'main' . DS . 'navigation.php'; ?>
 <?php
     $pageTitle = 'Homepage';
-    include dirname(__FILE__) . DIRECTORY_SEPARATOR . 'views' . DIRECTORY_SEPARATOR . 'main' . DIRECTORY_SEPARATOR . 'navigation.php'; 
+    include dirname(__FILE__) . DIRECTORY_SEPARATOR . 'views' . DIRECTORY_SEPARATOR . 'main' . DIRECTORY_SEPARATOR . 'navigation.php';
 ?>
 
 
@@ -189,6 +189,54 @@
                 <img src="media/vertical-test-image.jpg" class="inspectable-img">
             </div>
         </div>
+    </div>
+</div>
+
+
+<div class="articles-section-component">
+    <h1 class="section-title">
+        Our latest articles
+    </h1>
+    <div class="row container">
+        <article class="col-4">
+            <div class="article-image">
+                <img src="media/horizontal-test-image.jpg" class="w-100">
+            </div>
+            <div class="article-body">
+                <h1 class="title">All-carbon frame</h1>
+                <span class="tag">carbon</span>
+                <p class="description">
+                    Our carbon frames are voluminous, stiff and light. By placing carbon fibers of different...
+                </p>
+                <a href="#" class="btn btn-two"><span>Read more...</span></a>
+            </div>
+        </article>
+        <article class="col-4">
+            <div class="article-image">
+                <img src="media/horizontal-test-image.jpg" class="w-100">
+            </div>
+            <div class="article-body">
+                <h1 class="title">All-carbon frame</h1>
+                <span class="tag">carbon</span>
+                <p class="description">
+                    Our carbon frames are voluminous, stiff and light. By placing carbon fibers of different...
+                </p>
+                <a href="#" class="btn btn-two"><span>Read more...</span></a>
+            </div>
+        </article>
+        <article class="col-4">
+            <div class="article-image">
+                <img src="media/horizontal-test-image.jpg" class="w-100">
+            </div>
+            <div class="article-body">
+                <h1 class="title">All-carbon frame</h1>
+                <span class="tag">carbon</span>
+                <p class="description">
+                    Our carbon frames are voluminous, stiff and light. By placing carbon fibers of different...
+                </p>
+                <a href="#" class="btn btn-two"><span>Read more...</span></a>
+            </div>
+        </article>
     </div>
 </div>
 

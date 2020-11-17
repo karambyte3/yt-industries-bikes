@@ -47,7 +47,7 @@ header {
             &.show {
                 left: 0;
 
-                .inner-wrapper { 
+                .inner-wrapper {
                     padding-left: 80px;
                 }
             }
@@ -170,13 +170,13 @@ header {
             left: 0;
             opacity: 1;
         }
-        
+
         100% {
             opacity: 0;
             left: -300px;
         }
     }
-      
+
 }
 
 .nav-toggle {
@@ -282,7 +282,7 @@ header {
     position: fixed;
     display: none;
     transition: .3s;
-    
+
     &.show {
         z-index: 999;
         opacity: .5;
